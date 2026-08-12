@@ -16,7 +16,7 @@ const server = http.createServer((req, res) =>{
         res.statusCode = 200
         res.setHeader('Content-Type', 'text/html; charset=utf-8')
         res.statusCode = 200
-       return res.end('<h3>Página Inicial</h3>')
+       return res.end(fs.readFileSync(home, 'utf-8'))
     if(recurso === '/sobre'){
         res.statusCode = 200
         res.setHeader('Content-Type', 'text/html; charset=utf-8')
