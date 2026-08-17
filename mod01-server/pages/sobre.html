@@ -1,13 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nós  |  Conheaça nossa empresa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoJo Parte 4 - Diamond is Unbreakable</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Impact', 'Arial Black', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #3b0054;
+      background-image: 
+        linear-gradient(45deg, #2a003c 25%, transparent 25%), 
+        linear-gradient(-45deg, #2a003c 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #2a003c 75%), 
+        linear-gradient(-45deg, transparent 75%, #2a003c 75%);
+      background-size: 40px 40px;
+      background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Molduras Verdes e Rosas dos Cantos */
+    .corner-frame {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border: 4px solid #00ff87;
+      box-shadow: -4px -4px 0 #ff007f, inset 2px 2px 0 #ff007f;
+    }
+
+    .top-left {
+      top: 10px;
+      left: 10px;
+    }
+
+    .bottom-right {
+      bottom: 10px;
+      right: 10px;
+    }
+
+    /* Onomatopeias clássicas da Parte 4 (DORA DORA!) */
+    .onomatopeia {
+      position: absolute;
+      color: #1a2327;
+      font-size: 2.2rem;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+      user-select: none;
+    }
+
+    .top-left-muda {
+      top: 40px;
+      left: 40px;
+      transform: rotate(-15deg);
+    }
+
+    .bottom-right-muda {
+      bottom: 50px;
+      right: 40px;
+      transform: rotate(-15deg);
+    }
+
+    /* Card Principal (Amarelo) */
+    .card {
+      background-color: #ffeb00;
+      width: 420px;
+      padding: 35px 25px 25px;
+      border: 4px solid #000;
+      box-shadow: 12px 12px 0 #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      max-width: 90vw;
+    }
+
+    /* Título Estilizado */
+    .titulo {
+      font-size: 2.2rem;
+      color: #fff;
+      text-shadow: 
+        3px 3px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0px 4px 0 #ff007f;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    /* Balão de Fala */
+    .speech-bubble {
+      background-color: #fff;
+      border: 3px solid #000;
+      padding: 15px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .speech-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 30px;
+      border-width: 15px 15px 0 0;
+      border-style: solid;
+      border-color: #fff transparent transparent transparent;
+      display: block;
+      width: 0;
+      z-index: 1;
+    }
+
+    .speech-bubble::before {
+      content: '';
+      position: absolute;
+      bottom: -19px;
+      left: 28px;
+      border-width: 17px 17px 0 0;
+      border-style: solid;
+      border-color: #000 transparent transparent transparent;
+      display: block;
+      width: 0;
+    }
+
+    .subtitulo {
+      font-family: 'Arial', sans-serif;
+      font-weight: 900;
+      font-size: 1rem;
+      color: #ff007f;
+      margin-bottom: 8px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .texto-sobre {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: 0.85rem;
+      color: #000;
+      line-height: 1.4;
+    }
+
+    .destaque-stand {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.8rem;
+      color: #3b0054;
+      font-style: italic;
+    }
+
+    /* Botão Verde de Voltar */
+    .btn-colosseo {
+      background-color: #00ff87;
+      border: 3px solid #000;
+      color: #000;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 14px 10px;
+      width: 100%;
+      display: block;
+      transition: transform 0.1s, box-shadow 0.1s;
+    }
+
+    .btn-colosseo:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 4px 4px 0 #000;
+    }
+  </style>
 </head>
 <body>
-    <h2>Nossa página é muito é dahora</h2>
-    <p>tudo sobre nossas redes</p>
-    <a href="/">Ir para Home</a>
+
+  <!-- Molduras nos Cantos -->
+  <div class="corner-frame top-left"></div>
+  <div class="corner-frame bottom-right"></div>
+
+  <!-- Onomatopeia da Parte 4 (Josuke / Crazy Diamond) -->
+  <div class="onomatopeia top-left-muda">DORA DORA!</div>
+  <div class="onomatopeia bottom-right-muda">DORA!</div>
+
+  <!-- Card Principal -->
+  <main class="card">
+    <h1 class="titulo">PARTE 4: SOBRE</h1>
+
+    <!-- Balão com o conteúdo da Parte 4 -->
+    <div class="speech-bubble">
+      <p class="subtitulo">DIAMOND IS UNBREAKABLE</p>
+      <p class="texto-sobre">
+        A história se passa em 1999, na pacata cidade japonesa de <strong>Morioh</strong>. O protagonista é <strong>Josuke Higashikata</strong>, filho secreto de Joseph Joestar. Junto de seus amigos, ele investiga uma série de crimes misteriosos causados por usuários de Stand e enfrenta a ameaça do terrível serial killer <strong>Yoshikage Kira</strong>!
+      </p>
+      <span class="destaque-stand">⚡ Stand principal: Crazy Diamond (Restauração e Cura)</span>
+    </div>
+
+    <!-- Botão para voltar à Página Inicial -->
+    <a href="index.html" class="btn-colosseo">
+      TORNA ALLA BASE INITIALE!!
+    </a>
+  </main>
+
 </body>
 </html>
