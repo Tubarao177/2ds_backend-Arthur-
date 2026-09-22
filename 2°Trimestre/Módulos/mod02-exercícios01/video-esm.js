@@ -1,2 +1,1 @@
-export function alugarFilme(nomeFilme, dataFilme, preço){
-    return
+export function alugarFilme(nomeFilme, dataFilme, preço)
