@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoJo's Manga Store - Contato</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+        <h1>JOJO'S BIZARRE MANGA STORE</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h2>ENVIE UM CURALOU (OU UMA MENSAGEM)</h2>
+        
+        <div class="contact-wrapper">
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada com a velocidade do Made in Heaven!');">
+                <div class="form-group">
+                    <label for="nome">SEU NOME JOUSTING:</label>
+                    <input type="text" id="nome" required placeholder="Ex: Jotaro Kujo">
+                </div>
+                <div class="form-group">
+                    <label for="email">SEU E-MAIL DA FUNDAÇÃO SPEEDWAGON:</label>
+                    <input type="email" id="email" required placeholder="Ex: star_platinum@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">SUA MENSAGEM BIZARRA:</label>
+                    <textarea id="mensagem" rows="6" required placeholder="Digite aqui sua dúvida, crítica ou pose favorita..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">INVOCAR STAND (ENVIAR)</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>YARE YARE DAZE © 2026 - JOJO'S MANGA STORE. TODOS OS DIREITOS RESERVADOS.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    background-color: #0b0214; /* Deep purple-black */
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #4a0e4e, #1f0322);
+    border-bottom: 5px solid #ff6b00; /* JoJo Orange */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Bangers', cursive;
+    color: #ffcc00;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 3px 3px 0px #ff0055, 6px 6px 0px #000;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ff6b00;
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 0 15px;
+    letter-spacing: 1px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #ff0055;
+    text-shadow: 0 0 10px #ff6b00;
+}
+
+footer {
+    background-color: #000000;
+    border-top: 3px solid #ff0055;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Bangers', cursive;
+    color: #ff6b00;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-container h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px #ff0055;
+}
+
+.contact-form {
+    background-color: #1a0826;
+    border: 3px solid #ff6b00;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 0px #000;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Bangers', cursive;
+    font-size: 1.3rem;
+    color: #ff6b00;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    border: 2px solid #ff0055;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 8px #ff6b00;
+}
+
+.submit-btn {
+    background-color: #ff0055;
+    color: #fff;
+    font-family: 'Bangers', cursive;
+    font-size: 1.6rem;
+    padding: 12px 25px;
+    border: 3px solid #ffcc00;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px #000;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background-color: #ff6b00;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+}

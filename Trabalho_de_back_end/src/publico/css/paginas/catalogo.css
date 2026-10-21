@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    background-color: #0b0214; /* Deep purple-black */
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #4a0e4e, #1f0322);
+    border-bottom: 5px solid #ff6b00; /* JoJo Orange */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Bangers', cursive;
+    color: #ffcc00;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 3px 3px 0px #ff0055, 6px 6px 0px #000;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ff6b00;
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 0 15px;
+    letter-spacing: 1px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #ff0055;
+    text-shadow: 0 0 10px #ff6b00;
+}
+
+footer {
+    background-color: #000000;
+    border-top: 3px solid #ff0055;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Bangers', cursive;
+    color: #ff6b00;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+.catalog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.catalog-container h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    color: #ff6b00;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px #ff0055;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #000;
+    border: 3px solid #ff0055;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 15px rgba(74, 14, 78, 0.6);
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.product-item:hover {
+    border-color: #ffcc00;
+    transform: scale(1.03);
+}
+
+.part-indicator {
+    background-color: #ff6b00;
+    color: #000;
+    font-family: 'Bangers', cursive;
+    padding: 4px 10px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.product-item h3 {
+    font-family: 'Bangers', cursive;
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 10px 0;
+    min-height: 50px;
+}
+
+.price {
+    font-family: 'Bangers', cursive;
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin: 15px 0;
+}
+
+.buy-btn {
+    background-color: #4a0e4e;
+    color: white;
+    border: 2px solid #ff0055;
+    font-family: 'Bangers', cursive;
+    font-size: 1.3rem;
+    padding: 8px 25px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.buy-btn:hover {
+    background-color: #ff0055;
+    color: #000;
+}
