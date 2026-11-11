@@ -5,7 +5,9 @@ const fs = require('node:fs')
 const porta = 8001
 // Carrega o caminho dos arquivos
 const home = path.join(__dirname, 'pages/index.html')
-const sobre = path.join(__dirname, 'pages/index.html')
+const sobre = path.join(__dirname, 'paginas/sobre.html')
+const contato = path.join(__dirname, 'paginas/contato.html')
+const catalogo = path.join(__dirname, 'paginas/catalogo.html')
 
 
 const server = http.createServer((req, res) =>{
@@ -22,7 +24,7 @@ const server = http.createServer((req, res) =>{
         res.statusCode = 200
         res.setHeader('Content-Type', 'text/html; charset=utf-8')
         res.statusCode = 200
-       return res.end('<h3>Página Inicial</h3>')
+       return res.end(fs.readFileSync(sobre, 'utf-8'))
     } } else{
         res.statusCode = 401
         res.setHeader('Content-Type', 'text/html; charset=utf-8')
